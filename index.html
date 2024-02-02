@@ -6,8 +6,8 @@
     </head>
     <body>
         <h1>SUPREME COMMANDER: FORGED ALLIANCE FOREVER CALCULATOR</h1>
-        <p id="para"></p>
-        <button type="button">
+        <div id="para">These are my crocs</div>
+        <button onclick="myFunction()">
             click me
         </button>
         <table>
@@ -62,5 +62,16 @@
             <h2>This is a header</h2>
         </table>
     </body>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        function myFunction() {
+        var ele = document.getElementById("para");
+            if (ele.style.display === "none"){
+                ele.style.display = "block";
+            }
+            else {
+                ele.style.display = "none";
+            }
+        }
+    </script>
 </html>
