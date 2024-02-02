@@ -1,0 +1,9 @@
+h1 {
+    color : lightpink;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+th {
+    width: 100px;
+    border : 2px black;
+    background-color : lightgrey;
+}
