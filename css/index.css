@@ -1,11 +1,23 @@
-h1 {
-    color : lightpink;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+html {
+    color : #DBDBDB;
+    font-family :Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #212121;
+}
+
+header {
+    background-color: #313131;
+    margin : 0px;
+    border: 0px;
+    padding: 0px;
 }
 th {
-    width: 100px;
+    min-width: 70px;
+    width: 70px;
     border : 2px black;
-    background-color : lightgrey;
+    background-color : #313131;
 }
 #para {
     width: 100%;
