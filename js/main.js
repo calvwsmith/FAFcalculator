@@ -38,8 +38,44 @@ function acuSwitch() {
     db.style.display = "none";
     sim.style.display = "none";
     acu.style.display = "block";
+    
 }
+document.getElementById("uefComImg").style.display = "block";
+document.getElementById("cybranComImg").style.display = "none";
+document.getElementById("aeonComImg").style.display = "none";
+document.getElementById("seraComImg").style.display = "none";
 
+async function acuSelect(val){
+    var uef = document.getElementById("uefComImg");
+    var cybran = document.getElementById("cybranComImg");
+    var aeon = document.getElementById("aeonComImg");
+    var sera = document.getElementById("seraComImg");
+    if (val === "uef"){
+        uef.style.display = "block";
+        cybran.style.display = "none";
+        aeon.style.display = "none";
+        sera.style.display = "none";
+    }
+    else if (val === "cybran"){
+        uef.style.display = "none";
+        cybran.style.display = "block";
+        aeon.style.display = "none";
+        sera.style.display = "none";
+    }
+    else if (val === "aeon"){
+        uef.style.display = "none";
+        cybran.style.display = "none";
+        aeon.style.display = "block";
+        sera.style.display = "none";
+    }
+    else {
+        uef.style.display = "none";
+        cybran.style.display = "none";
+        aeon.style.display = "none";
+        sera.style.display = "block"; 
+    }
+    document.getElementById("testdiv").textContent = val;
+}
 document.getElementById("myPara").innerHTML = "titan.getDps()";
 titan = new Unit(weapons = [new weapon(damage = 5, ROF = 5)]);
 
@@ -94,6 +130,5 @@ class weapon {
         this.ROF = ROF;
         this.name = name;
         this.tPri = tPri;
-
     }
 }
