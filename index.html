@@ -4,10 +4,22 @@
         <title>FAFcalculator</title>
         <link rel="icon" type="image/x-icon" href="./images/faf-logo.png">
     </head>
-    <body>
-        <header>
-            <h1><strong>SUPREME COMMANDER: FORGED ALLIANCE FOREVER CALCULATOR</strong></h1>
-        </header>
+<body>
+    <header>
+        <h1><strong>SUPREME COMMANDER: FORGED ALLIANCE FOREVER CALCULATOR</strong></h1>
+    </header>
+    <button onclick="simSwitch()">SIM</button>
+    <button onclick="acuSwitch()">ACU</button>
+    <button onclick="dbSwitch()">DATABASE</button>
+
+    <div id="sim">
+        <p>PUT SIM HERE</p>
+    </div>
+    <div id="acu">
+        <p>PUT ACU HERE</p>
+    </div>
+    <div id="db">
+
         
         <div id="para">These are my crocs</div>
         <button onclick="myFunction()">
@@ -59,22 +71,12 @@
                 <td>Vision</td>
                 <td>Radar</td>
                 <td>Suicide</td>
-                <td>Land DPS</td>
+                <td><p id="myPara">ayo</p></td>
                 <td>Damage</td>
             </tr>
             <h2>This is a header</h2>
         </table>
-    </body>
-    <script src="./js/main.js"></script>
-    <script>
-        function myFunction() {
-        var ele = document.getElementById("para");
-            if (ele.style.display === "none"){
-                ele.style.display = "block";
-            }
-            else {
-                ele.style.display = "none";
-            }
-        }
-    </script>
+    </div>
+</body>
+<script src="./js/main.js"></script>
 </html>
