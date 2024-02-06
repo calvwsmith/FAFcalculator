@@ -1,3 +1,6 @@
+
+
+
 var ele = document.getElementById("para");
 ele.onclick = myFunction()
 function myFunction() {
@@ -36,8 +39,17 @@ function acuSwitch() {
     sim.style.display = "none";
     acu.style.display = "block";
 }
-titan = new Unit(weapons = [new weapon(damage = 5, ROF = 5)]);
+
 document.getElementById("myPara").innerHTML = "titan.getDps()";
+titan = new Unit(weapons = [new weapon(damage = 5, ROF = 5)]);
+
+
+
+async function getBlueprint(){
+    var bpText =  await ((await fetch("https://raw.githubusercontent.com/FAForever/fa/develop/units/UEL0303/UEL0303_unit.bp")).text());
+    document.getElementById("test").textContent = bpText;
+}
+
 
 class Unit {
     constructor(name, tier, operation, health, armor, shield, shieldRegen, regen, massCost, energyCost, eYield, mYield, buildTime, speed, vision, radar, weapons, abilities, sonar, omni, waterVision, turnRate){
