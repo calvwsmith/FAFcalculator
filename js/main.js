@@ -15,29 +15,47 @@ function myFunction() {
 db.style.display = "block";
 sim.style.display = "none";
 acu.style.display = "none";
+old.style.display = "none";
 function simSwitch() {
     var db = document.getElementById("db");
     var sim = document.getElementById("sim");
     var acu = document.getElementById("acu");
+    var old = document.getElementById("old");
     db.style.display = "none";
     sim.style.display = "block";
     acu.style.display = "none";
+    old.style.display = "none";
 }
 function dbSwitch() {
     var db = document.getElementById("db");
     var sim = document.getElementById("sim");
     var acu = document.getElementById("acu");
+    var old = document.getElementById("old");
     db.style.display = "block";
     sim.style.display = "none";
     acu.style.display = "none";
+    old.style.display = "none";
 }
 function acuSwitch() {
     var db = document.getElementById("db");
     var sim = document.getElementById("sim");
     var acu = document.getElementById("acu");
+    var old = document.getElementById("old");
     db.style.display = "none";
     sim.style.display = "none";
     acu.style.display = "block";
+    old.style.display = "none";
+    
+}
+function oldSwitch() {
+    var db = document.getElementById("db");
+    var sim = document.getElementById("sim");
+    var acu = document.getElementById("acu");
+    var old = document.getElementById("old");
+    db.style.display = "none";
+    sim.style.display = "none";
+    acu.style.display = "none";
+    old.style.display = "block";
     
 }
 document.getElementById("uefComImg").style.display = "block";

@@ -10,6 +10,7 @@
     </header>
     <button onclick="simSwitch()">SIM</button>
     <button onclick="acuSwitch()">ACU</button>
+    <button onclick="oldSwitch()">OLD</button>
     <button onclick="dbSwitch()">DATABASE</button>
 
     <div id="sim">
@@ -17,14 +18,12 @@
         <div id="test">test</div>
         <!-- <button onclick="getBlueprint()">async function test</button> -->
     </div>
-    <div id="acu">
+    <div id="old">
         <head>
         <style>
         h1 {text-align: center;}
-        p {text-align: center;}
         </style>
         </head>
-        <h1> PUT ACU HERE </h1>
         <p>
         <label for="faction">Choose your Faction:</label> 
              <select name="faction" id="faction" onchange="acuSelect(this.options[this.selectedIndex].value)">
@@ -34,11 +33,90 @@
                 <option value="sera">Seraphim</option> 
              </select>
         <br><br>
-        <img id="uefComImg" src="./images/UEFACU.jpg" alt="UEFACU" width="600" height="630">
-        <img id="cybranComImg" src="./images/CybranACU.jpg" alt="CybranACU" width="600" height="630">
-        <img id="aeonComImg" src="./images/Aeon/A0-0-0.png" alt="AeonACU" width="570" height="780">
-        <img id="seraComImg" src="./images/SeraphimACU.jpg" alt="SeraphimACU" width="600" height="630">
+        <img id="uefComImg" src="./images/UEFACU.jpg" alt="UEFACU" class="center" width="600" height="630">
+        <img id="cybranComImg" src="./images/CybranACU.jpg" alt="CybranACU" class="center" width="600" height="630">
+        <img id="aeonComImg" src="./images/Aeon/A0-0-0.png" alt="AeonACU" class="center" width="570" height="780">
+        <img id="seraComImg" src="./images/SeraphimACU.jpg" alt="SeraphimACU" class="center" width="600" height="630">
         </p>
+    </div>
+    <div id="acu">
+        <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        *{box-sizing: border-box}
+        body,<html> {
+            height:100%;
+            margin: 0;
+        }
+        .tablink{
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+          outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+        .tablink:hover{
+            background-color: #777
+        }
+        .tabcontent {
+        color:white;
+        display:none;
+        padding:100px 20px;
+        height: 100%;
+        }
+
+        #ueftab {background-color: rgba(70,70,255,.5);}
+        #cybrantab {background-color: rgba(255,70,70,.5);}
+        #aeontab {background-color: rgba(70,255,70,.5);}
+        #seratab {background-color: rgba(255,175,50,.5);}
+        </style>
+        </head>        
+<button class="tablink" onclick="openPage('ueftab', this, 'blue')" ueftab="defaultOpen">UEF</button>
+<button class="tablink" onclick="openPage('cybrantab', this, 'red')">Cybran</button>
+<button class="tablink" onclick="openPage('aeontab', this, 'green')">Aeon</button>
+<button class="tablink" onclick="openPage('seratab', this, 'orange')">Seraphim</button>
+
+<div id="ueftab" class="tabcontent">
+  <h3>UEF</h3>
+  <p> <img src="./images/UEFACU.jpg" alt="UEFACU" class="center" width="600" height="630"> </p>
+</div>
+
+<div id="cybrantab" class="tabcontent">
+  <h3>Cybran</h3>
+  <p> <img src="./images/CybranACU.jpg" alt="UEFACU" class="center" width="600" height="630"> </p>
+</div>
+
+<div id="aeontab" class="tabcontent">
+  <h3>Aeon</h3>
+  <p> <img src="./images/Aeon/A0-0-0.png" alt="UEFACU" class="center" width="600" height="630"> </p>
+</div>
+
+<div id="seratab" class="tabcontent">
+  <h3>Seraphim</h3>
+  <p> <img src="./images/SeraphimACU.jpg" alt="UEFACU" class="center" width="600" height="630"> </p>
+
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+</div>
 
     </div>
     <div id="db">
