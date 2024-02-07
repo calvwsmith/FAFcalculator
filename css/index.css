@@ -7,12 +7,20 @@ body {
     background-color: #212121;
 }
 
-header {
+.navbar {
     background-color: #313131;
     margin : 0px;
     border: 0px;
     padding: 0px;
 }
+
+.navactive {
+    color : white;
+}
+.navlink {
+    color: grey;
+}
+
 th {
     min-width: 70px;
     width: 70px;
@@ -26,3 +34,34 @@ th {
     background-color: lightblue;
     margin-top: 20px;
 } 
+
+*{box-sizing: border-box}
+body {
+    height:100%;
+    margin: 0;
+}
+.tablink{
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+  outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tablink:hover{
+    background-color: #777
+}
+.tabcontent {
+color:white;
+display:none;
+padding:100px 20px;
+height: 100%;
+}
+
+#ueftab {background-color: rgba(70,70,255,.5);}
+#cybrantab {background-color: rgba(255,70,70,.5);}
+#aeontab {background-color: rgba(70,255,70,.5);}
+#seratab {background-color: rgba(255,175,50,.5);}
