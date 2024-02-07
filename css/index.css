@@ -45,7 +45,7 @@ body {
     color: white;
     float: left;
     border: none;
-  outline: none;
+    outline: none;
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
@@ -54,11 +54,17 @@ body {
 .tablink:hover{
     background-color: #777
 }
-.tabcontent {
+.tabcontent{
 color:white;
 display:none;
 padding:100px 20px;
-height: 100%;
+height: auto;
+}
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
 }
 
 #ueftab {background-color: rgba(70,70,255,.5);}
