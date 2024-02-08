@@ -12,86 +12,7 @@ function myFunction() {
         ele.style.display = "none";
     }
 }
-db.style.display = "block";
-sim.style.display = "none";
-acu.style.display = "none";
-old.style.display = "none";
-function simSwitch() {
-    var db = document.getElementById("db");
-    var sim = document.getElementById("sim");
-    var acu = document.getElementById("acu");
-    var old = document.getElementById("old");
-    db.style.display = "none";
-    sim.style.display = "block";
-    acu.style.display = "none";
-    old.style.display = "none";
-}
-function dbSwitch() {
-    var db = document.getElementById("db");
-    var sim = document.getElementById("sim");
-    var acu = document.getElementById("acu");
-    var old = document.getElementById("old");
-    db.style.display = "block";
-    sim.style.display = "none";
-    acu.style.display = "none";
-    old.style.display = "none";
-}
-function acuSwitch() {
-    var db = document.getElementById("db");
-    var sim = document.getElementById("sim");
-    var acu = document.getElementById("acu");
-    var old = document.getElementById("old");
-    db.style.display = "none";
-    sim.style.display = "none";
-    acu.style.display = "block";
-    old.style.display = "none";
-    
-}
-function oldSwitch() {
-    var db = document.getElementById("db");
-    var sim = document.getElementById("sim");
-    var acu = document.getElementById("acu");
-    var old = document.getElementById("old");
-    db.style.display = "none";
-    sim.style.display = "none";
-    acu.style.display = "none";
-    old.style.display = "block";
-    
-}
-document.getElementById("uefComImg").style.display = "block";
-document.getElementById("cybranComImg").style.display = "none";
-document.getElementById("aeonComImg").style.display = "none";
-document.getElementById("seraComImg").style.display = "none";
-
-async function acuSelect(val){
-    var uef = document.getElementById("uefComImg");
-    var cybran = document.getElementById("cybranComImg");
-    var aeon = document.getElementById("aeonComImg");
-    var sera = document.getElementById("seraComImg");
-    if (val === "uef"){
-        uef.style.display = "block";
-        cybran.style.display = "none";
-        aeon.style.display = "none";
-        sera.style.display = "none";
-    }
-    else if (val === "cybran"){
-        uef.style.display = "none";
-        cybran.style.display = "block";
-        aeon.style.display = "none";
-        sera.style.display = "none";
-    }
-    else if (val === "aeon"){
-        uef.style.display = "none";
-        cybran.style.display = "none";
-        aeon.style.display = "block";
-        sera.style.display = "none";
-    }
-    else {
-        uef.style.display = "none";
-        cybran.style.display = "none";
-        aeon.style.display = "none";
-        sera.style.display = "block"; 
-    }
+{
     document.getElementById("testdiv").textContent = val;
 }
 document.getElementById("myPara").innerHTML = "titan.getDps()";
@@ -150,9 +71,6 @@ class weapon {
         this.tPri = tPri;
     }
 }
-
-
-
 function openPage(pageName,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

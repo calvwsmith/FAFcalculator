@@ -20,10 +20,15 @@ body {
 .navlink {
     color: grey;
 }
-
 th {
-    min-width: 70px;
-    width: 70px;
+    min-width: 4%;
+    width: 4%;
+    border : 2px black;
+    background-color : #313131;
+}
+td {
+    text-align: center;
+    width: 4%;
     border : 2px black;
     background-color : #313131;
 }
@@ -48,7 +53,7 @@ body {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 25px;
     width: 25%;
 }
 .tablink:hover{
@@ -65,6 +70,15 @@ height: auto;
     margin-left:auto;
     margin-right:auto;
     width:50%;
+}
+h3{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.navbar{
+    text-align: center;
 }
 
 #ueftab {background-color: rgba(70,70,255,.5);}
