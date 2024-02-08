@@ -15,10 +15,14 @@ body {
 }
 
 .navactive {
+    font-size: large;
     color : white;
+    text-decoration: none;
 }
 .navlink {
+    font-size: large;
     color: grey;
+    text-decoration: none;
 }
 th {
     min-width: 4%;
